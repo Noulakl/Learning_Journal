@@ -17,6 +17,9 @@ footer{
 }
 
 /* === Typo === */
+a{
+    user-select: none;
+}
 nav a{
     margin: 0;
     font-size: .8rem;
@@ -71,6 +74,7 @@ footer p{
     text-align: justify;
     text-shadow: 0 0 20px gray ;
     width: 90%;
+    margin-bottom: .8em;
 }
 
 footer span{
@@ -78,8 +82,11 @@ footer span{
     text-transform: capitalize;
     font-weight: bold;
 }
+#year{
+    display: inline;
+}
 footer p{
-    font-size: .6em;
+    font-size: .8em;
     margin: .5em;
 }
 
@@ -114,7 +121,7 @@ a:focus{
 /* Media Queries */
 @media (min-width: 1024px) {
     h1{
-        font-size: 2.1em;
+        font-size: 3em;
     }
 
     h5{
@@ -122,7 +129,7 @@ a:focus{
     }
 
     p{
-        font-size: 2em;
+        font-size: 1.6em;
     }
     .blog h5{
         font-weight: bolder;

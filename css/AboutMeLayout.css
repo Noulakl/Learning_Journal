@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-areas: 
+    ".... head ...."
+    ".... main ...."
+    "foot foot foot";
+}
+header, header nav{
+    display: flex;
+}
+header{
+    padding: .8em 0;
+    align-items: center;
+    justify-content:space-between;
+    grid-area: head;
+}
+
+header nav{
+    gap: 2em;
+}
+main{
+    margin: 1em 0;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: .8em 1fr .8em ;
+    grid-template-rows: auto 1fr;
+    gap: .8em 0;
+    grid-template-areas: 
+    "hero hero hero"
+    "proc proc proc"
+    "rece rece rece"
+    "blog blog blog";
+}
+.process{
+    grid-area: proc;
+}
+
+.hero-section{
+    grid-area: hero;
+}
+
+.blog-cont{
+grid-area: blog ;
+}
+
+.blog{
+    margin-bottom: 3em;
+}
+
+footer{
+    grid-area: foot;
+    padding: .5em;
+}
+
+/* some changes from the main stylesheet */
+.hero-texts{
+    margin-top: 2em;
+}
+.hero-texts p{
+    margin: 2em 0;
+}
+.hero-texts h1{
+    width: 85vw;
+    text-align: center;
+}
+.hero-texts h1 span{
+    font-weight: 900;
+    font-size: 1.1em;
+    text-shadow: 1px 1px cyan;
+}
+.hero-texts img{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 80vw;
+    box-shadow: 0 5px cyan;
+}
+#Recent-post{
+    text-align: center;
+    grid-area: rece;
+}
+/* Media Queries */
+@media (min-width: 1024px) {
+    body{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 6em 1fr 6em;
+        grid-template-areas: 
+        ".... head ...."
+        ".... main ...."
+        "foot foot foot";
+    }
+    .blog-cont{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(20vw, 1fr));
+        gap: 1.8em;
+        }
+    h2{
+        font-size: 2em;
+    }
+    .hero-texts img{
+        display: block;
+        border-radius: 50%;
+        margin: auto;
+        width: 40vw;
+    }
+}

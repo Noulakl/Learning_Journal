@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-areas: 
+    ".... head ...."
+    ".... main ...."
+    "foot foot foot";
+}
+
+header{
+    padding: .8em 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    grid-area: head;
+}
+
+header nav{
+    display: flex;
+    gap: 2em;
+}
+main{
+    margin: 1em 0;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: .8em 1fr .8em ;
+    grid-template-rows: auto 1fr;
+    gap: .8em 0;
+    grid-template-areas: 
+    "hero hero hero"
+    "proc proc proc"
+    "rece rece rece"
+    "blog blog blog";
+}
+.process{
+    grid-area: proc;
+}
+
+.hero-section{
+    grid-area: hero;
+}
+
+.blog-cont{
+grid-area: blog ;
+}
+
+.blog{
+    margin-bottom: 3em;
+}
+
+footer{
+    grid-area: foot;
+    padding: .5em;
+}
+
+/* some changes from the main stylesheet */
+.hero-texts{
+    margin-top: 2em;
+}
+#Recent-post{
+    text-align: center;
+    grid-area: rece;
+}
+@media (min-width: 1024px) {
+    body{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 6em 1fr 6em;
+        grid-template-areas: 
+        ".... head ...."
+        ".... main ...."
+        "foot foot foot";
+    }
+    .blog-cont{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(20vw, 1fr));
+        gap: 1.8em;
+        }
+    h2{
+        font-size: 2em;
+    }
+}
