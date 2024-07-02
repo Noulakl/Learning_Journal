@@ -1,5 +1,142 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 html, 
 body {
     margin: 0;
     padding: 0;
+}
+.blog{
+    padding: .5em;
+    border-radius: .5em;
+}
+footer{
+    background-color: #202020;
+    color: #ECECEC;
+    text-align: center;
+}
+
+/* === Typo === */
+nav a{
+    margin: 0;
+    font-size: .8rem;
+    text-decoration: none;
+    color: #202020;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+.blog h1{
+    margin:.5em 0;
+}
+
+.blog h5{
+    font-size: .87rem;
+    font-weight: normal;
+}
+
+.blog p{
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: normal;
+}
+main a{
+    display: block;
+    color: #202020;
+    text-align: center;
+    text-decoration: underline;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.blog p,
+.blog h5, 
+.hero-texts p,
+.hero-texts h5,
+.hero-texts h1,
+footer h1,
+footer p{
+    margin: 0;
+}
+
+.hero-texts h1{
+    margin: .2em 0;
+    width: 60%;
+}
+
+.hero-texts p{
+    text-align: justify;
+    text-shadow: 0 0 20px gray ;
+    width: 90%;
+}
+
+footer span{
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+footer p{
+    font-size: .6em;
+    margin: .5em;
+}
+
+/* === images === */
+
+header img{
+    width: 200px;
+}
+
+.hero-section img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: .7em;
+    border-radius: .3em;
+}
+/* Hover effect */
+a{
+    transition: all .5s;
+}
+a:hover,
+a:focus{
+    color: gray;
+    letter-spacing: .2em;
+    transform: scale(105%);
+}
+/* Media Queries */
+@media (min-width: 1024px) {
+    h1{
+        font-size: 2.1em;
+    }
+
+    h5{
+        font-size: 1.8em;
+    }
+
+    p{
+        font-size: 2em;
+    }
+    .blog h5{
+        font-weight: bolder;
+        font-size: 1.2em;
+    }
+    .blog p{
+        font-size: 1.3em;
+    }
+    nav a,
+    main a{
+        font-size: 1.2rem;
+    }
+    footer p{
+        margin: 2rem;
+        font-size: 1em;
+    }
 }
