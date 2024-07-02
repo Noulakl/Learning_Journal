@@ -80,7 +80,7 @@ footer p{
 footer span{
     display: block;
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight: 900;
 }
 #year{
     display: inline;
