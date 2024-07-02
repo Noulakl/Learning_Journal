@@ -67,14 +67,13 @@ footer p{
 
 .hero-texts h1{
     margin: .2em 0;
-    width: 60%;
+    width: 80%;
 }
 
 .hero-texts p{
     text-align: justify;
     text-shadow: 0 0 20px gray ;
     width: 90%;
-    margin-bottom: .8em;
 }
 
 footer span{
@@ -119,6 +118,39 @@ a:focus{
     transform: scale(105%);
 }
 /* Media Queries */
+@media (max-width: 480px) {
+    h1{
+        font-size: 1em;
+    }
+
+    h5{
+        font-size: .6em;
+    }
+
+    p{
+        font-size: .9em;
+    }
+    .blog h5{
+        font-weight: bolder;
+        font-size: .8em;
+    }
+    .blog p{
+        font-size: .9em;
+    }
+    .blog h1{
+        font-size: 1.2em;
+    }
+    nav a,
+    main a{
+        font-size: .6rem;
+    }
+    footer p{
+        margin: 2rem;
+        font-size: .9em;
+    }
+    
+}
+
 @media (min-width: 1024px) {
     h1{
         font-size: 3em;
