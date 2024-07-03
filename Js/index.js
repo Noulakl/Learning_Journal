@@ -1,6 +1,8 @@
 import data from './data.js'
 const blogCont = document.getElementById('blog-cont')
+const blogContRecent = document.getElementById('blog-cont-Post')
 const year = new Date().getFullYear()
+
 function DataHTML(){
     const windowWidth = window.innerWidth 
     return  data.map((blogs)=>{
@@ -30,7 +32,6 @@ function DataHTML(){
                 </p>
             </section>` 
         }
-      
     }, 0).join("")
 }
 document.getElementById('year').innerText = year

@@ -62,6 +62,10 @@ footer{
 .hero-texts{
     margin-top: 2em;
 }
+.hero-texts p{
+    text-shadow: none;
+    margin-bottom: .5em;
+}
 #Recent-post{
     text-align: center;
     grid-area: rece;

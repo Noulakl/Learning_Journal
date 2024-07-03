@@ -70,7 +70,10 @@ footer{
 @media (min-width: 1024px) {
     .blog-cont{
         display: grid;
-        grid-template-columns:repeat(auto-fit, minmax(30vw, 1fr));
-        gap: 1.8em;
+        grid-template-columns:repeat(auto-fit, minmax(25vw, 1fr));
+        gap: .8em;
         }
+    .blog{
+        margin: 0;
+    }
 }

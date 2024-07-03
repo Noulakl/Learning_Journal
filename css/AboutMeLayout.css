@@ -64,6 +64,7 @@ footer{
 }
 .hero-texts p{
     margin: 2em 0;
+    text-shadow: none;
 }
 .hero-texts h1{
     width: 85vw;
